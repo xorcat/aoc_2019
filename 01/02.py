@@ -1,8 +1,8 @@
 #!/usr/bin/python
 
 def calc_fuel(input):
-    fuel = int((int(input) / 3.0) - 2)
-    if (fuel <= 0.0):
+    fuel = int((int(input) / 3) - 2)
+    if (fuel <= 0):
         return 0
     else:
         return fuel + calc_fuel(fuel)
